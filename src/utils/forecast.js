@@ -12,7 +12,6 @@ const forecast = (lat, long, callback) => {
     } else if (body.hasOwnProperty('success') && body.success === false) {
       callback('Unable to find location!');
     } else {
-      console.debug(body);
       const forecastText = `It is ${body.current.weather_descriptions[0]} and ${body.current.temperature} degrees out. 
                             It feels like ${body.current.feelslike} degrees out.
                             The winds are out of the ${body.current.wind_dir} at ${body.current.wind_speed}
