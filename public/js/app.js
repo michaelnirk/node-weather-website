@@ -24,6 +24,5 @@ weatherForm.addEventListener('submit', (e) => {
         p2.textContent = data.forecast;
       }
     })
-  });
-  
+  });  
 })
